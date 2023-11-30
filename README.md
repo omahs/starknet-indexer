@@ -107,8 +107,8 @@ query GetStarkGateMessages {
 ```
 
 Notes on the response:
-- You might noticed zero-prefixed addresses in the `message.to.hash` field – those are Ethereum L1 addresses
-- `l1_handler.parsed_calldata` is the original calldata (also available) decoded according with the ABI provided by the sequencer node API
+- You might notice zero-prefixed addresses in the `message.to.hash` field – those are Ethereum L1 addresses
+- `l1_handler.parsed_calldata` is the original calldata (also available) decoded according to the ABI provided by the sequencer node API
 - `l1_handler.status` is also an enum, check out the [docstrings/wiki](https://github.com/dipdup-io/starknet-indexer/wiki/Database-structure#l1_handler) for details `unknown - 1 , not received - 2 , received - 3 , pending - 4 , rejected - 5 , accepted on l2 - 6 , accepted on l1 - 7`
 
 ### Get event logs
